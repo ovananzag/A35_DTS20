@@ -1,9 +1,176 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
 }
 
+/*HEADER CSS*/
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #ECF0F1;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.container{
+    margin: 0 100px;
+}
+
+.header-left {
+    float: left;
+}
+
+.logo {
+    margin-top: 20px;
+    height: 55px;
+}
+
+.header-right{
+    float: right;
+}
+
+.header-right a{
+    float: left;
+    text-decoration: none;
+    display: block;
+    line-height: 90px;
+    padding: 0 24px;
+    color: black;
+}
+
+.header-right a:hover{
+    color: white;
+    background-color: #FF4F5B;
+    transition: background-color 1s;
+}
+
+
+/*UTAMA CSS*/
+.top-wrapper{
+    margin-top: 150px;
+    height: 700px;
+    text-align: center;
+}
+
+.item {
+    width: 50%;
+    float: left;
+}
+
+.item-box {
+      text-align: center;
+      margin: 0 50px;
+}
+
+.item img{
+    width: 650px;
+}
+
+.welcome{
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.spn {
+    padding: 12px 24px;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.home {
+    color: fuchsia;
+    size: 240px;
+    font-style: inherit;
+    margin-right: 10px;
+}
+
+.study {
+    color: blue;
+    size: 240px;
+    font-style: inherit;
+    margin-right: 10px;
+}
+
+.digital {
+    color: orangered;
+    size: 240px;
+    font-style: inherit;
+    margin-right: 10px;
+}
+
+/*END OF UTAMA CSS*/
+
+
+/*EXTRA 1 CSS*/
+.extra{
+    height: 400px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.title{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*EXTRA 2 CSS*/
+.contents {
+    height: 400px;
+    text-align: center;
+}
+
+.contents-title {
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contents-item {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.contents img {
+    height: 200px;
+}
+
+.contents-item h5{
+    font-size: 18px;
+    margin-top: 28px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.contents-item p{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/*FOOTER CSS*/
+footer {
+    margin-top: 20px;
+    height: 180px;
+    width: 100%;
+    background-color: #ECF0F1;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 30px;
+    height: 75px;
+    display:
+}
 
 /* Navbar */
 nav{
@@ -28,7 +195,62 @@ nav{
 }
 /* END Navbar */
 
+/*Responsive Web*/
+@media screen and (max-width: 1440px) {
+    .item img{
+        width: 500px;
+    }
+    .welcome{
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .top-wrapper{
+        height: 600px;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .item-box {
+        text-align: center;
+        margin: 0;
+    }
+    .item img{
+        width: 350px;
+    }
+    .welcome{
+        margin-top: 0;
+    }
+    .txt h1{
+        font-size: 25px;
+    }
+    .txt p{
+        font-size: 14px;
+    }
+    .top-wrapper{
+        height: 400px;
+    }
+    .contents {
+        height: 350px;
+    }
+    .title, .contents-title{
+        font-size: 20px;
+    }
+    .contents img{
+        height: 150px;
+    }
+    .contents-item h5{
+        font-size: 16px;
+    }
+    .contents-item p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-wrapper{
+        height: 300px;
+    }
+}
 
 /* Mobile */
 @media screen and (max-width: 768px){
@@ -93,177 +315,3 @@ nav{
     }
 }
 /* END Mobile */
-
-
-
-
-
-
-
-
-
-body {
-  font-family: "Avenir Next";
-}
-
-img {
-    width: 200px;
-    height: 200px;
-}
-                  
-.center { 
-    text-align: center;
-}
-
-.contents {
-    height: 400px;
-    margin-top :100px;
-}
-
-.section-title {
-    border-bottom: 4px solid #dee9ec;            
-    font-size: 50px;  
-    padding-bottom: 15px;
-    margin-bottom: 50px;
-}
-
-.contents-item  {
-    float: left;
-    margin-right: 40px;
-    font-size: 24px;
-    margin-top : 30px;
-}
-
-.contents-item p{
-    font-size: 24px;
-    margin-top: 30px;
-}
-
-.kontak-title {
-    border-bottom: 4px solid #dee9ec;            
-    font-size: 50px;  
-    padding-bottom: 15px;
-    margin-bottom: 50px;
-}
-
-body {
-  margin: 0;
-  font-family: "Lucida Grande";
-}
-
-header {
-  height: 90px;
-  width: 100%;
-  background-color: #ECF0F1;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.container {
-  width: 100%;
-  padding: 0 15px;
-  /*margin: 0 100px;*/
-}
-
-.header-left {
-  /*float: left;*/
-  /*position: fixed;*/
-  /*text-align: center;*/
-  
-  float: left;
-  /*margin-top: 20px;*/
-}
-
-.logo {
-  /*height: 50px;*/
-  width: 124px;
-  /*margin-top: 20px;*/
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: lightcoral;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.logo {
-  /*width: 124px;*/
-  width: fit-content;
-  height: 90px;
-  /*margin-top: 20px;*/
-}
-
-.top-wrapper{
-  margin-top: 100px;
-  /*padding: 80px 0 0 0;*/
-}
-
-.spn {
-  padding: 12px 24px;
-  /*color: white;*/
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.home {
-  /*background-color: #3b5998;*/
-  color: fuchsia;
-  size: 240px;
-  font-style: inherit;
-  margin-right: 10px;
-}
-
-.study {
-  /*background-color: #3b5998;*/
-  color: blue;
-  size: 240px;
-  font-style: inherit;
-  margin-right: 10px;
-}
-
-.digital {
-  /*background-color: #3b5998;*/
-  color: orangered;
-  size: 240px;
-  font-style: inherit;
-  margin-right: 10px;
-}
-
-.item {
-  width: 50%;
-  float: left;
-  background-color: #81D5F9;
-}
-
-.item-box {
-  height: 339px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.kontak {
-    height: 400px;
-    margin-top : 100px;
-}
-
-.kontak-item  {
-    float: center ;
-    font-size: 24px;
-    margin-top : 30px;
-}
-
