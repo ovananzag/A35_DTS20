@@ -115,11 +115,25 @@ header {
     background-color: #f5f5f5;
 }
 
+
 .title{
     margin: 0;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+}
+
+.extra img{
+    width: 500px;
+    float: right;
+}
+
+.text-area{
+    text-align: left;
+}
+
+.text-area h1{
+    font-size: 50px;
 }
 
 /*EXTRA 2 CSS*/
