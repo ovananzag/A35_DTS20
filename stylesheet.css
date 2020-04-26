@@ -68,6 +68,16 @@ header {
 
 .item img{
     width: 650px;
+    animation: main 1s ease-in-out infinite alternate;
+}
+
+@keyframes main{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(20px);
+    }
 }
 
 .welcome{
@@ -115,7 +125,6 @@ header {
     background-color: #f5f5f5;
 }
 
-
 .title{
     margin: 0;
     font-size: 30px;
@@ -124,17 +133,22 @@ header {
 }
 
 .extra img{
-    width: 500px;
+    width: 600px;
     float: right;
+    position: relative;
+    bottom: 40px;
 }
 
 .text-area{
     text-align: left;
+    margin-right: 800px;
 }
 
 .text-area h1{
+    margin-bottom: 0;
     font-size: 50px;
 }
+
 
 /*EXTRA 2 CSS*/
 .contents {
@@ -157,6 +171,16 @@ header {
 
 .contents img {
     height: 200px;
+    animation: member 1s ease-in-out infinite alternate;
+}
+
+@keyframes member{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
 }
 
 .contents-item h5{
@@ -170,6 +194,7 @@ header {
     font-size: 16px;
     margin-top: 0;
 }
+
 
 /*FOOTER CSS*/
 footer {
@@ -221,6 +246,14 @@ nav{
     .top-wrapper{
         height: 600px;
     }
+    .text-area{
+        margin-bottom: 0;
+        margin-right: 600px
+    }
+    .extra img{
+        width: 550px;
+        bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -257,6 +290,23 @@ nav{
     }
     .contents-item p{
         font-size: 14px;
+    }
+    .extra img{
+        width: 400px;
+        bottom: -30px;
+    }
+    .text-area{
+        margin-right: 400px;
+    }
+
+    .text-area{
+        font-size: 14px;
+        margin-right: 450px;
+    }
+
+    .text-area h1{
+        margin-bottom: 0;
+        font-size: 25px;
     }
 }
 
@@ -329,3 +379,4 @@ nav{
     }
 }
 /* END Mobile */
+
